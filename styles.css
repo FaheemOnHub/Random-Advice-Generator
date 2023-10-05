@@ -1,0 +1,59 @@
+:root {
+  --Light-Cyan: hsl(193, 68%, 49%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 600px;
+  background: var(--Grayish-Blue);
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.advice-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.line-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.next-advice-button {
+  background-image: url("images/icon-dice.svg"); /* Replace with the path to your image */
+  background-color: var(--Neon-Green);
+  background-repeat: no-repeat;
+  background-position: center; /* Center the icon horizontally and vertically */
+  padding: 20px 20px; /* Add padding to create space around the icon */
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  position: relative;
+  top: 0.7rem;
+}
