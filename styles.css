@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@800&display=swap");
 :root {
   --Light-Cyan: hsl(193, 68%, 49%);
   --Neon-Green: hsl(150, 100%, 66%);
@@ -8,7 +9,7 @@
 
 * {
   box-sizing: border-box;
-  font-size: 28px;
+
   font-weight: 800;
 }
 
@@ -25,7 +26,7 @@ body {
 }
 
 main {
-  max-width: 600px;
+  width: 600px;
   background: var(--Grayish-Blue);
   flex-direction: column;
   display: flex;
@@ -38,8 +39,16 @@ main {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-family: "Inter", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  color: whitesmoke;
 }
-
+.advice-no {
+  margin-top: 2rem;
+  color: var(--Neon-Green);
+}
 .line-style {
   display: flex;
   flex-direction: row;
@@ -48,9 +57,10 @@ main {
 .next-advice-button {
   background-image: url("images/icon-dice.svg"); /* Replace with the path to your image */
   background-color: var(--Neon-Green);
+  background-size: 35px 35px;
   background-repeat: no-repeat;
   background-position: center; /* Center the icon horizontally and vertically */
-  padding: 20px 20px; /* Add padding to create space around the icon */
+  padding: 40px 40px; /* Add padding to create space around the icon */
   border: none;
   cursor: pointer;
   border-radius: 2rem;
