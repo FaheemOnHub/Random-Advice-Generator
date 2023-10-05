@@ -48,6 +48,7 @@ main {
 .advice-no {
   margin-top: 2rem;
   color: var(--Neon-Green);
+  font-family: "Manrope", sans-serif;
 }
 .line-style {
   display: flex;
@@ -66,4 +67,8 @@ main {
   border-radius: 2rem;
   position: relative;
   top: 0.7rem;
+}
+
+.next-advice-button:hover {
+  box-shadow: 0 0 40px 3px var(--Neon-Green); /* Adjust the values for the glow effect */
 }

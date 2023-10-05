@@ -11,6 +11,7 @@ api_fetch = () => {
       advice_text.innerHTML = `"${result.slip.advice}"`;
     });
 };
+api_fetch();
 next_button.addEventListener("click", () => {
   api_fetch();
 });
