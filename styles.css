@@ -21,13 +21,15 @@ body {
   padding: 0%;
   background-color: var(--Dark-Blue);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 main {
   width: 600px;
-  background: var(--Grayish-Blue);
+  background: var(--Dark-Grayish-Blue);
   flex-direction: column;
   display: flex;
   gap: 2rem;
@@ -50,9 +52,8 @@ main {
   color: var(--Neon-Green);
   font-family: "Manrope", sans-serif;
 }
-.line-style {
-  display: flex;
-  flex-direction: row;
+.line-style-img-2 {
+  display: none;
 }
 
 .next-advice-button {
@@ -71,4 +72,23 @@ main {
 
 .next-advice-button:hover {
   box-shadow: 0 0 40px 3px var(--Neon-Green); /* Adjust the values for the glow effect */
+}
+
+@media (max-width: 650px) {
+  main {
+    width: 80%;
+  }
+  .advice-text {
+    font-size: 24px;
+  }
+  .next-advice-button {
+    padding: 20px 20px;
+    background-size: 25px 25px;
+  }
+  .line-style-img-1 {
+    display: none;
+  }
+  .line-style-img-2 {
+    display: block;
+  }
 }
